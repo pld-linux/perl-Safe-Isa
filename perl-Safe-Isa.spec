@@ -7,7 +7,7 @@
 Summary:	Safe::Isa - Call isa, can, does and DOES safely on things that may not be objects
 Name:		perl-Safe-Isa
 Version:	1.000010
-Release:	1
+Release:	2
 # same as perl
 License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
@@ -55,5 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
+%dir %{perl_vendorlib}/Safe/
 %{perl_vendorlib}/Safe/Isa.pm
 %{_mandir}/man3/*
